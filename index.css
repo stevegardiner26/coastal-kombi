@@ -72,7 +72,7 @@ nav .act:hover {
     background-position: center;
     background-image: url('img/background.jpg');
     position: fixed;
-    background-size: 100%;
+    background-size: cover;
     width: 100%;
     height: 700px;
     filter: opacity(95%);
@@ -144,7 +144,7 @@ nav .act:hover {
 .virtualSlide {
     position: relative;
     background: #ffffff;
-    width: 100%;
+    width: 100vw;
     height: 1000px;
 }
 
@@ -176,19 +176,28 @@ footer {
     position: relative;
     background: #333;
     width: 100%;
-    height: 200px;
+    height: auto;
 }
 
 .historyContainer {
     background-image: radial-gradient(#00C1E5 , #008AA4);
-    width: 100%;
-    height: 900px;
+    width: 100vw;
+    height: 950px;
     z-index: 10;
+}
+
+.historyContainer p {
+    text-indent: 30px;
+    font-size: 16px;
+}
+
+.historyContainer h4 strong {
+    color: #00CAF0;
 }
 
 .jerseyShore {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 500px;
     z-index: 1;
 }
@@ -206,7 +215,7 @@ footer {
 
 .contact {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 700px;
     padding: 50px;
 }
@@ -219,5 +228,337 @@ footer {
     box-shadow: 0 10px 10px rgba(0,0,0,.2);
 }
 
+.contact input, .contact textarea {
+    font-size: 18px;
+}
 
+.contact input, .contact textarea, .contact button {
+    margin: 20px auto;
+}
 
+.contact button:hover {
+    background: #008AA4 !important;
+    cursor: pointer;
+    color: white;
+}
+
+.cSocials {
+    font-size: 20px;
+}
+
+.emphasis {
+    font-size: 35px;
+    font-weight: bold;
+    color: #00C1E5;
+    text-shadow: 0 0 3px rgba(0,0,0,1);
+}
+
+.showcase {
+    position: relative;
+    background-image: url("img/Vehicle2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 600px;
+    margin-top: 100px;
+}
+
+.door {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top: 280px;
+    left: 350px;
+    z-index: 7;
+}
+
+.door:hover {
+    cursor: pointer;
+}
+
+.histScroll {
+    background: white;
+    height: 530px;
+    z-index: 2;
+}
+
+.textHis {
+    margin-top: 30px;
+}
+
+.gifHis {
+    padding-top: 30px;
+}
+
+.gifHis h1 {
+    padding-top: 50px;
+}
+
+.navm {
+    display: none;
+}
+
+.glyphicon-menu-hamburger {
+    padding: 5px;
+    font-size: 40px;
+    color: white;
+    transition: font-size .5s;
+}
+
+.glyphicon-menu-hamburger:hover {
+    opacity: .8;
+}
+
+.gsticky {
+    padding: 4px !important;
+    font-size: 30px !important;
+}
+
+.gsticky:hover {
+    opacity: 1;
+    color: #333;
+}
+
+.act2:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.sticky .act2:hover {
+    cursor: pointer;
+    text-decoration: none;
+    background: #333;
+    color: white;
+}
+
+.navm .socials {
+    float: left !important;
+    padding-top: 0;
+}
+
+.navm div {
+    padding-top: 10px;
+    left: 10px;
+    display: block;
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+.navm .socials div {
+    margin-left: 0px;
+    padding-top: 0;
+}
+
+.expandedNav {
+    height: 240px;
+}
+
+.titleB {
+    margin: 20px auto;
+    width: 500px;
+}
+
+.titleH {
+    width: 400px;
+}
+
+.h1r {
+    padding-top: 70px;
+}
+
+.h1r h1 {
+    font-size: 50px;
+}
+
+@media screen and (max-width: 1070px) {
+    .historyContainer {
+        height: 1000px;
+    }
+
+    .historyContainer h4 {
+        font-size: 22px;
+    }
+
+    .histScroll {
+        height: 610px;
+    }
+
+    .titleSlide .container .row{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 700px){
+    .histScroll p {
+        margin-left: 15px;
+        padding-bottom: 10px;
+    }
+
+    .histScroll h3{
+        margin-left: 15px;
+        padding-top: 50px;
+        margin-top: 0;
+    }
+
+    .textHis {
+        margin-top: 0;
+    }
+
+    .histScroll {
+        max-height: 430px;
+        height: auto;
+    }
+
+    .hist2 p:first-child{
+        margin-top: 0 !important;
+        padding-top: 40px !important;
+    }
+
+    .historyContainer {
+        height: 1210px;
+        background: transparent;
+    }
+
+    .historyContainer h4 {
+        padding-bottom: 20px;
+    }
+
+    .hist2 {
+        margin-top: -15px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .histScroll p {
+        margin-left: 15px;
+    }
+
+    .hist2 p:first-child {
+        margin-top: 0 !important;
+    }
+
+    .histScroll h3 {
+        margin-left: 15px;
+    }
+
+    .titleSlide .container {
+        width: 700px;
+    }
+
+    .historyContainer {
+        height: 1350px;
+        background: transparent;
+    }
+
+    .histScroll {
+        padding: 10px;
+        max-height: 610px;
+        height: auto;
+    }
+
+    .textHis {
+        margin-top: 0px;
+    }
+
+    .gifHis {
+        padding-top: 0px;
+    }
+
+    .gifHis h1 {
+        margin-top: 0px;
+    }
+
+    .contact {
+        height: 900px;
+    }
+
+    .contact .container {
+        height: 800px;
+    }
+
+    .virtualSlide {
+        height: 850px;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    .navm {
+        display: block;
+    }
+
+    .titleSlide .container p {
+        margin: 90px auto 0px auto !important;
+    }
+
+    .jerseyShore p {
+        height: 210px;
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .titleH {
+        width: 300px;
+    }
+
+    .titleSlide .container p {
+        margin: 140px auto 0px auto !important;
+        width: 300px;
+    }
+
+    .titleSlide .container .row{
+        display: block;
+        position: relative;
+    }
+
+    .btn2, .btn1 {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .btn2 {
+        top: 100px;
+    }
+
+    .histScroll {
+        max-height: 680px;
+    }
+
+    .historyContainer {
+        height: 1660px;
+    }
+
+    .contact {
+        padding: 50px 0;
+        height: 1000px;
+    }
+
+    .contact .container {
+        height: 900px;
+    }
+
+    .jerseyShore p {
+        transform: scale(.75);
+        margin: -30px auto 0px auto;
+        height: 400px;
+        max-width: 350px;
+        font-size: 22px;
+        line-height: 39px;
+    }
+
+    .h1r {
+        padding-top: 30px;
+    }
+
+    .h1r h1 {
+        font-size: 30px;
+    }
+
+    .contact h1 {
+        font-size: 25px;
+    }
+}
