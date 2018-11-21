@@ -4,7 +4,7 @@
     <!--Designed and Built By Steven Gardiner 9/6/2018 -->
     <meta charset="UTF-8">
     <title>Coastal Kombi</title>
-    <link rel="shortcut icon" type="image/x-icon" href="img/kombi.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/kombi.jpg" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu" rel="stylesheet">
