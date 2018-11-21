@@ -22,7 +22,7 @@ function myFunction() {
     }
 
     if((window.pageYOffset >= 700)&&(window.pageYOffset < 2200)){
-        document.getElementsByClassName('backgroundPic')[0].style.backgroundImage = "url(img/boardwalk.PNG)";
+        document.getElementsByClassName('backgroundPic')[0].style.backgroundImage = "url(img/boardwalk.JPG)";
         document.getElementsByClassName('backgroundPic')[0].style.height = "100vh";
         document.getElementsByClassName('backgroundPic')[0].style.filter = "blur(0px)";
     }
