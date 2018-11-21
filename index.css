@@ -70,7 +70,7 @@ nav .act:hover {
 .backgroundPic {
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('./img/background.jpg');
+    background-image: url('img/mainBackground.jpg');
     position: fixed;
     background-size: cover;
     width: 100%;

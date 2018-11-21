@@ -22,18 +22,18 @@ function myFunction() {
     }
 
     if((window.pageYOffset >= 700)&&(window.pageYOffset < 2200)){
-        document.getElementsByClassName('backgroundPic')[0].style.backgroundImage = "url(img/boardwalk.JPG)";
+        document.getElementsByClassName('backgroundPic')[0].style.backgroundImage = "url(img/coastalHighway.JPG)";
         document.getElementsByClassName('backgroundPic')[0].style.height = "100vh";
         document.getElementsByClassName('backgroundPic')[0].style.filter = "blur(0px)";
     }
     else if(window.pageYOffset >= 2200){
-        document.getElementsByClassName('backgroundPic')[0].style.backgroundImage = "url(img/background.jpg)";
+        document.getElementsByClassName('backgroundPic')[0].style.backgroundImage = "url(img/mainBackground.jpg)";
         document.getElementsByClassName('backgroundPic')[0].style.filter = "blur(20px)";
         document.getElementsByClassName('backgroundPic')[0].style.height = "100vh";
         document.getElementsByClassName('backgroundPic')[0].style.height = "700px";
     }
     else {
-        document.getElementsByClassName('backgroundPic')[0].style.backgroundImage = "url(img/background.jpg)";
+        document.getElementsByClassName('backgroundPic')[0].style.backgroundImage = "url(img/mainBackground.jpg)";
         document.getElementsByClassName('backgroundPic')[0].style.filter = "blur(0px)";
         document.getElementsByClassName('backgroundPic')[0].style.height = "700px";
     }
