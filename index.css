@@ -200,6 +200,9 @@ footer {
     width: 100vw;
     height: 500px;
     z-index: 1;
+    background-image: url('./img/coastalHighway.JPG');
+    background: no-repeat fixed center center;
+    background-size: cover;
 }
 
 .jerseyShore p {

@@ -11,7 +11,6 @@
 </head>
 <body>
 <div class="backgroundPic"></div>
-<div class="backgroundPic2"></div>
 <nav id="nav" class="row">
     <div class="act home col-md-1" style="margin-left: 20px;" onclick="scrollo('titles')">Home</div>
     <div class="act historyNav col-md-3" onclick="scrollo('history')">History of the Kombi</div>
