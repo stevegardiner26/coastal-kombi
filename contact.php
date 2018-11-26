@@ -12,5 +12,6 @@
     $headers = "From: $email_from \r\n";
     $headers .= "Reply-To: $visitor_email \r\n";
     mail($to,$email_subject,$email_body,$headers);
-    header('Location: thank_you.php');
+    /*header('Location: thank_you.php');*/
+    echo "Thank you" . $name . 'for submitting ' . $visitor_email
 ?>
