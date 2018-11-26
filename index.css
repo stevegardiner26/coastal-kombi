@@ -74,8 +74,7 @@ nav .act:hover {
     position: fixed;
     background-size: cover;
     width: 100%;
-    height: 700px;
-    filter: opacity(95%);
+    height: 100%;
     z-index: -1;
     transition: opacity .3s;
 }
@@ -201,7 +200,9 @@ footer {
     height: 500px;
     z-index: 1;
     background-image: url('./img/coastalHighway.JPG');
-    background: no-repeat fixed center center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
     background-size: cover;
 }
 
@@ -221,6 +222,11 @@ footer {
     width: 100vw;
     height: 700px;
     padding: 50px;
+    background-image: url('./img/background2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .contact .container {
@@ -233,10 +239,15 @@ footer {
 
 .contact input, .contact textarea {
     font-size: 18px;
+    padding: 10px 10px 0px 10px;
 }
 
 .contact input, .contact textarea, .contact button {
     margin: 20px auto;
+}
+
+.contact .btn {
+    padding: 5px 10px 5px 10px;
 }
 
 .contact button:hover {
@@ -258,12 +269,13 @@ footer {
 
 .showcase {
     position: relative;
-    background-image: url("img/Vehicle2.jpg");
+    background-image: url("img/virtual/allshut.JPG");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center;
+    background-position: center center;
     height: 600px;
-    margin-top: 100px;
+    width: 1200px;
+    margin: 100px auto 0px auto;
 }
 
 .door {
@@ -565,3 +577,52 @@ footer {
         font-size: 25px;
     }
 }
+
+/* Virtual Tour Code */
+.showcase div {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 2px;
+    z-index: 2;
+}
+
+.showcase div:hover {
+    border: 3px solid dodgerblue;
+}
+
+.backDoor {
+    width: 137px;
+    height: 282px;
+    top: 200px;
+    left: 482px;
+}
+
+.middleDoor {
+    width: 137px;
+    height: 282px;
+    top: 200px;
+    left: 659px;
+}
+
+.frontDoor {
+    width: 255px;
+    height: 282px;
+    top: 194px;
+    left: 806px;
+}
+
+.trunkTop {
+    width: 90px;
+    height: 115px;
+    top: 190px;
+    left: 136px;
+}
+
+.trunkBottom {
+    width: 90px;
+    height: 84px;
+    top: 306px;
+    left: 112px;
+}
+
+

@@ -1,3 +1,12 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: steve
+ * Date: 11/26/2018
+ * Time: 7:23 AM
+ */
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -130,13 +139,9 @@
     <div class="col-md-12">
         <div class="container">
             <h1 style="color: #333;" class="text-center">Contact The Coastal Kombi</h1>
-            <div class="col-md-6">
-                <form method="POST" action="contact.php">
-                    <input name="name" id="name" type="text" class="form-control" placeholder="Name" required>
-                    <input name="email" id="email" type="email" class="form-control" placeholder="Email" required>
-                    <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Message" required></textarea>
-                    <input type="submit" name="submit" class="btn" style="background:#00C1E5;font-size: 24px;height: 36px;width:100%;">
-                </form>
+            <div class="col-md-6 text-center" style="padding-top: 20%;">
+                <h4>Thank you for contacting the Coastal Kombi</h4>
+                <h4>We will contact you shortly!</h4>
             </div>
             <div class="col-md-6 cSocials">
                 <div class="row text-center" style="margin-top: 20px;">
