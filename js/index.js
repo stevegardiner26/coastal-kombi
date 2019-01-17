@@ -2,9 +2,9 @@
 window.onscroll = function() {myFunction()};
 
 // Get the navbar
-var navbar = document.getElementById("nav");
+var navbar = document.getElementsByClassName("navdesktop")[0];
 var navbar2 = document.getElementsByClassName('navm')[0];
-var hamburger = document.getElementsByClassName('glyphicon-menu-hamburger')[0];
+/*var hamburger = document.getElementsByClassName('icon')[0];*/
 
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
@@ -14,11 +14,11 @@ function myFunction() {
     if (window.pageYOffset >= 1) {
         navbar.classList.add("sticky");
         navbar2.classList.add("sticky");
-        hamburger.classList.add("gsticky");
+       /* hamburger.classList.add("gsticky");*/
     } else {
         navbar.classList.remove("sticky");
         navbar2.classList.remove("sticky");
-        hamburger.classList.remove("gsticky");
+       /* hamburger.classList.remove("gsticky");*/
     }
 }
 
@@ -29,7 +29,7 @@ window.onload = function() {
 };
 
 function scrollo(el) {
-    document.getElementById('' + el).scrollIntoView({ behavior: 'smooth', block: 'center' });
+    document.getElementsByClassName('' + el)[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
     closeNav();
 }
 

@@ -1,0 +1,533 @@
+body {
+    font-family: 'Baloo Tammudu', cursive;
+}
+
+/*Navigation CSS */
+nav {
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    overflow: hidden;
+    color: white;
+    text-shadow: 0 0 4px #000;
+    height: 50px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,.3);
+    transition: background-color .5s, color .2s, height .5s;
+    z-index: 60;
+}
+
+.navdesktop ul {
+    flex-direction: row;
+    width: 100%;
+}
+
+.socials a {
+    transition: transform .5s, width .5s, height .5s;
+}
+
+.socials a:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+.insta {
+    position: absolute;
+    right: -10px;
+    background-image: url('../img/instagramColor.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+    margin: 5px 0px 5px 0px;
+    top: 0;
+    cursor: pointer;
+}
+
+.sticky .insta {
+    background-image: url('../img/instagramGray.png');
+    width: 30px;
+    height: 30px;
+    right: -10px;
+    margin: 10px 0px 10px 0px;
+}
+
+.nav-item {
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 40px;
+    height: 50px;
+    font-size: 24px;
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: padding-bottom .5s, padding-top .5s;
+}
+
+.navdesktop .nav-link {
+    color: white;
+}
+
+.navdesktop .socials {
+    position: absolute;
+    right: 10px;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #00CAF0; /* linear-gradient(to bottom, #81E8FB,#00ccf0); */
+    color: #333;
+    text-shadow: 0 0 0 #000;
+    z-index: 10;
+    height: 40px;
+}
+
+.sticky .nav-item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: background 500ms, color 500ms;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.1);
+}
+
+.sticky .nav-item:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.navm {
+    display: none;
+    padding-left: 10px;
+}
+
+.glyphicon-menu-hamburger {
+    padding: 5px;
+    font-size: 40px;
+    color: white;
+    transition: font-size .5s;
+}
+
+.glyphicon-menu-hamburger:hover {
+    opacity: .8;
+}
+
+.gsticky {
+    padding: 4px !important;
+    font-size: 30px !important;
+}
+
+.gsticky:hover {
+    opacity: 1;
+    color: #333;
+}
+
+.icon {
+    margin-top: -3px;
+    margin-left: -4px;
+    transition: margin-top .5s;
+}
+
+ion-icon {
+    width: 40px;
+    height: 40px;
+    color: white;
+}
+
+.sticky ion-icon {
+    color: #333;
+}
+
+.sticky .icon {
+    margin-top: -8px;
+}
+
+.navm .nav-item2:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.sticky .nav-item2:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.navm .socials {
+    float: left !important;
+    padding-top: 0px;
+    position: relative;
+}
+
+.navm .nav-link {
+    padding-top: 10px;
+    left: 10px;
+    display: block;
+    font-size: 24px;
+    padding-left: 0px;
+    color: white;
+    transition: font-size .5s;
+}
+
+.navm .socials a {
+    margin-left: 0px;
+    padding-top: 0;
+    right: auto;
+
+}
+
+.sticky .nav-link {
+    color: #333 !important;
+}
+
+.sticky.expandedNav {
+    height: 265px;
+}
+
+.expandedNav {
+    height: 275px;
+}
+
+@media screen and (max-width: 575px) {
+    .navdesktop {
+        display: none;
+    }
+
+    .navm {
+        display: block;
+    }
+}
+
+/*Start of Main Page*/
+/*Title Section*/
+
+.titleSlide {
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+.backgroundImage {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../img/mainBackground.jpg');
+    background-size: cover;
+}
+
+.title-contain {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.titleH {
+    position: relative;
+    top: -100px;
+    opacity: 1;
+    transition: opacity 1s, top 1s;
+}
+
+.titleB {
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.titleSlide h1 {
+    text-shadow: 0px 0px 5px rgba(0,0,0,.8);
+    color: whitesmoke;
+    text-align: center;
+    margin: auto;
+    font-size: 62px;
+}
+
+.titleSlide p {
+    text-shadow: 0px 0px 5px rgba(0,0,0,.8);
+    color: whitesmoke;
+    text-align: center;
+    margin: 25px auto 0px auto;
+    font-size: 30px;
+}
+
+.titleSlide .btn {
+    margin: 10px;
+    width: 180px;
+    height: 60px;
+    font-size: 25px;
+    line-height: 60px;
+    box-shadow: 0px 0px 5px black;
+    transition: background-color .5s;
+}
+
+.titleSlide .btn1:hover {
+    background: #008AA4 !important;
+}
+
+.titleSlide .btn2:hover {
+    background: lightblue;
+}
+
+@media screen and (max-width: 575px) {
+    .titleSlide .btn {
+        margin: 10px 0 10px 0px;
+        width: 100%;
+    }
+}
+
+/* Virtual Tour Section */
+
+.virtualSlide {
+    position: relative;
+    background: #ffffff;
+    width: 100%;
+    height: auto;
+    padding: 100px 20px;
+}
+
+.virtualSlide h1 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.mobilechecker {
+    display: none;
+}
+
+@media screen and (max-width: 575px) {
+    .showcase {
+        display: none;
+    }
+
+    .mobilechecker {
+        display: block;
+    }
+}
+
+/* Jersey Shore Section of the Kombi */
+
+.jerseyShore {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    background-image: url('../img/coastalHighway.JPG');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.jerseyShore p {
+    font-size: 18px;
+    margin-left: 60px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    width: 600px;
+    background: rgba(255,255,255,.6);
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,.8);
+    border-radius: 2px;
+}
+
+.emphasis {
+    font-size: 35px;
+    font-weight: bold;
+    color: #00C1E5;
+    text-shadow: 0 0 3px rgba(0,0,0,1);
+}
+
+.h1r {
+    padding-top: 30px;
+}
+
+.h1r h1 {
+    width: 100%;
+    font-size: 50px;
+}
+
+@media screen and (max-width: 575px) {
+    .jerseyShore {
+        background-position: -625px center;
+    }
+
+    .jerseyShore p {
+        transform: scale(.75);
+        margin: -30px auto 0px auto;
+        height: auto;
+        max-width: 350px;
+        font-size: 22px;
+        line-height: 39px;
+    }
+
+    .h1r h1 {
+        font-size: 30px;
+    }
+}
+
+/*History Section */
+.histScroll {
+    background: white;
+    height: auto;
+    z-index: 2;
+    padding: 10px !important;
+}
+
+.historyContainer {
+    background: #333;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+}
+
+.historyContainer p {
+    text-indent: 30px;
+    font-size: 16px;
+}
+
+.historyContainer h4 strong {
+    color: #00CAF0;
+}
+
+.histScroll h4 {
+    font-size: 20px;
+}
+
+.textHis {
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 575px) {
+    .histScroll h4 {
+        font-size: 14px;
+    }
+
+    .textHis {
+        margin-bottom: 0px;
+    }
+}
+
+/* Contact Section Code */
+.contact {
+    height: auto;
+    padding: 150px 50px 150px 50px;
+    background-image: url('../img/background2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.contact h1 {
+    margin-top: 25px;
+}
+
+.contact .container {
+    background: white;
+    width: 80%;
+    height: auto;
+    border-radius: 3px;
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+}
+
+.contact input, .contact textarea {
+    font-size: 18px;
+    padding: 10px 10px 0px 10px;
+}
+
+.contact input, .contact textarea, .contact button {
+    margin: 20px auto;
+}
+
+.contact .btn {
+    padding: 5px 10px 5px 10px;
+}
+
+.contact button:hover {
+    background: #008AA4 !important;
+    cursor: pointer;
+    color: white;
+}
+
+.cSocials {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 575px) {
+    .contact {
+        padding: 20px;
+    }
+
+    .contact .container {
+        width: 95%;
+        padding-bottom: 20px;
+        margin-bottom: 100px;
+    }
+
+    .cSocials div:last-child {
+        font-size: 18px;
+    }
+}
+
+footer {
+    background: #333;
+}
+
+/* Virtual Tour Code */
+.showcase div {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 2px;
+    z-index: 2;
+}
+
+.showcase div:hover {
+    border: 3px solid dodgerblue;
+}
+
+.backDoor {
+    width: 137px;
+    height: 282px;
+    top: 200px;
+    left: 482px;
+}
+
+.middleDoor {
+    width: 137px;
+    height: 282px;
+    top: 200px;
+    left: 659px;
+}
+
+.frontDoor {
+    width: 255px;
+    height: 282px;
+    top: 194px;
+    left: 806px;
+}
+
+.trunkTop {
+    width: 90px;
+    height: 115px;
+    top: 190px;
+    left: 136px;
+}
+
+.trunkBottom {
+    width: 90px;
+    height: 84px;
+    top: 306px;
+    left: 112px;
+}
