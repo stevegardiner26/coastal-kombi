@@ -295,9 +295,10 @@ ion-icon {
     width: 100%;
     height: auto;
     padding: 100px 20px;
+    overflow: hidden;
 }
 
-.virtualSlide h1 {
+.virtualSlide h1, .virtualSlide h5 {
     width: 100%;
     margin-bottom: 20px;
 }
@@ -486,6 +487,25 @@ footer {
 }
 
 /* Virtual Tour Code */
+.showcase {
+    border: 2px solid gray;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+    position: relative;
+    background: url('/img/virtual/allshut.JPG') center center no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    width: 1200px;
+    height: 600px;
+    min-width: 1200px;
+    max-width: 1200px;
+    min-height: 600px;
+    max-height: 600px;
+    margin: auto;
+}
+
 .showcase div {
     position: absolute;
     cursor: pointer;
@@ -494,7 +514,7 @@ footer {
 }
 
 .showcase div:hover {
-    border: 3px solid dodgerblue;
+    /*border: 3px solid dodgerblue; */
 }
 
 .backDoor {

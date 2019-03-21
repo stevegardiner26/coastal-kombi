@@ -77,15 +77,16 @@
         <section class="virtualSlide row no-gutters">
             <div class="col-md-12">
                 <div class="row">
-                    <h1 class="text-center">Virtual Tour</h1>
+                    <h1 class="text-center">Virtual Tour</h1><br>
+                    <h5 class="text-center">Explore the Van by Clicking Around!</h5>
                 </div>
                 <div class="row">
                     <div class="showcase">
-                        <div class="backDoor" onclick="toggleComponent('backDoor.JPG')"></div>
-                        <div class="middleDoor" onclick="toggleComponent('middleDoor.JPG')"></div>
-                        <div class="frontDoor" onclick="toggleComponent('frontDoor.JPG')"></div>
-                        <div class="trunkTop" onclick="toggleComponent('trunkTop.JPG')"></div>
-                        <div class="trunkBottom" onclick="toggleComponent('trunkBottom.JPG')"></div>
+                        <div class="backDoor" onclick="toggleComponent(event, 'backDoor.JPG')"></div>
+                        <div class="middleDoor" onclick="toggleComponent(event, 'middleDoor.JPG')"></div>
+                        <div class="frontDoor" onclick="toggleComponent(event, 'frontDoor.JPG')"></div>
+                        <div class="trunkTop" onclick="toggleComponent(event, 'trunkTop.JPG')"></div>
+                        <div class="trunkBottom" onclick="toggleComponent(event, 'trunkBottom.JPG')"></div>
                     </div>
                     <div class="mobilechecker text-center">
                         <p>The Virtual Tour is Currently Not Available on your Device.</p>
