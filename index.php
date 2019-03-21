@@ -16,7 +16,7 @@
     <title>Coastal Kombi</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/kombi.jpg" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/temp.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu" rel="stylesheet">
     <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
 </head>
@@ -166,11 +166,11 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <form method="POST" action="mailto:stevegardiner26@gmail.com">
+                            <form class="form" method="POST" action="thank_you.php">
                                 <input name="name" id="name" type="text" class="form-control" placeholder="Name" required>
                                 <input name="email" id="email" type="email" class="form-control" placeholder="Email" required>
                                 <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Message" required></textarea>
-                                <input type="submit" name="submit" class="btn" style="background:#00C1E5;font-size: 24px;height: 36px;width:100%;">
+                                <input type="submit" name="submit" class="btn" style="color:white;background:#00C1E5;font-size: 24px;height: 36px;width:100%;">
                             </form>
                         </div>
                         <div class="col-md-6 cSocials">

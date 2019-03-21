@@ -16,11 +16,11 @@
     <title>Coastal Kombi</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/kombi.jpg" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/temp.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu" rel="stylesheet">
     <script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
 </head>
-<body>
+<body onload="scrollo('contact')">
 <div class="container-fluid" style="padding: 0;">
     <div class="backgroundImage"></div>
     <nav class="navdesktop navbar">
@@ -166,12 +166,9 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <form method="POST" action="mailto:stevegardiner26@gmail.com">
-                            <input name="name" id="name" type="text" class="form-control" placeholder="Name" required>
-                            <input name="email" id="email" type="email" class="form-control" placeholder="Email" required>
-                            <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Message" required></textarea>
-                            <input type="submit" name="submit" class="btn" style="background:#00C1E5;font-size: 24px;height: 36px;width:100%;">
-                        </form>
+                        <?php
+                            echo "Thank you for submitting the form!"
+                        ?>
                     </div>
                     <div class="col-md-6 cSocials">
                         <div class="row no-gutters text-center" style="margin-top: 20px;">
@@ -194,6 +191,6 @@
     </footer>
 </div>
 </body>
-<script src="js/index.js"></script>
-<script src="js/virtual_tour.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/virtual_tour.js"></script>
 </html>
