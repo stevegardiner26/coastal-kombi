@@ -26,19 +26,31 @@ var info = {
 var count = 0, previousComponent, shut = true;
 var showcase  = document.getElementsByClassName('showcase')[0];
 function toggleComponent(e, component) {
+    var sec_component = component.split('.')[0];
     if (component === previousComponent) {
         if (shut === false) {
-            showcase.style.backgroundImage = 'url(img/virtual/allshut.JPG)';
-            showcase.style.backgroundPosition = 'center center';
+            document.getElementsByClassName('main_contain')[0].style.display = 'block';
+            document.getElementsByClassName(sec_component + '_contain')[0].style.display = 'none';
+            //showcase.style.backgroundImage = 'url(img/virtual/allshut.JPG)';
+            //showcase.style.backgroundPosition = 'center center';
             shut = true;
         } else {
-            showcase.style.backgroundImage = 'url(img/virtual/' + component + ')';
-            positionImage(component);
+            document.getElementsByClassName(sec_component + '_contain')[0].style.display = 'block';
+            document.getElementsByClassName('main_contain')[0].style.display = 'none';
+            //showcase.style.backgroundImage = 'url(img/virtual/' + component + ')';
+            //positionImage(component);
             shut = false;
         }
     } else {
-        showcase.style.backgroundImage = 'url(img/virtual/' + component + ')';
-        positionImage(component);
+        if(previousComponent) {
+            document.getElementsByClassName(previousComponent.split('.')[0] + '_contain')[0].style.display = 'none';
+            document.getElementsByClassName('main_contain')[0].style.display = 'none';
+        } else {
+            document.getElementsByClassName('main_contain')[0].style.display = 'none';
+        }
+        document.getElementsByClassName(sec_component + '_contain')[0].style.display = 'block';
+        //showcase.style.backgroundImage = 'url(img/virtual/' + component + ')';
+        //positionImage(component);
         shut = false;
     }
     var close = component === previousComponent;
@@ -104,14 +116,14 @@ function hideRight() {
 
 function positionImage(component) {
     if (component === 'backDoor.JPG') {
-        showcase.style.backgroundPosition = '1px -97.5px';
+        document.getElementsByClassName('backDoor_contain')[0].style.backgroundPosition = '1px -97.5px';
     } else if (component === 'middleDoor.JPG') {
-        showcase.style.backgroundPosition = '-7px -101px';
+        document.getElementsByClassName('middleDoor_contain')[0].style.backgroundPosition = '-7px -101px';
     } else if (component === 'frontDoor.JPG') {
-        showcase.style.backgroundPosition = '5px -98.5px';
+        document.getElementsByClassName('frontDoor_contain')[0].style.backgroundPosition = '5px -98.5px';
     } else if (component === 'trunkTop.JPG') {
-        showcase.style.backgroundPosition = 'center -106px';
+        document.getElementsByClassName('trunkTop_contain')[0].style.backgroundPosition = 'center -106px';
     } else if (component === 'trunkBottom.JPG') {
-        showcase.style.backgroundPosition = 'center -100px';
+        document.getElementsByClassName('trunkBottom_contain')[0].style.backgroundPosition = 'center -100px';
     }
 }

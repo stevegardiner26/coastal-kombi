@@ -81,7 +81,13 @@
                     <h5 class="text-center">Explore the Van by Clicking Around!</h5>
                 </div>
                 <div class="row">
-                    <div class="showcase">
+                    <div class="backDoor_contain showcase" style="background-image: url('/img/virtual/backDoor.JPG'); display: none;"></div>
+                    <div class="middleDoor_contain showcase" style="background-image: url('/img/virtual/middleDoor.JPG'); display: none;"></div>
+                    <div class="frontDoor_contain showcase" style="background-image: url('/img/virtual/frontDoor.JPG'); display: none;"></div>
+                    <div class="trunkBottom_contain showcase" style="background-image: url('/img/virtual/trunkBottom.JPG'); display: none;"></div>
+                    <div class="trunkTop_contain showcase" style="background-image: url('/img/virtual/trunkTop.JPG'); display: none;"></div>
+                    <div class="main_contain showcase" style="background-image: url('/img/virtual/allshut.JPG');"></div>
+                    <div class="showcase" style="position: relative;">
                         <div class="backDoor" onclick="toggleComponent(event, 'backDoor.JPG')"></div>
                         <div class="middleDoor" onclick="toggleComponent(event, 'middleDoor.JPG')"></div>
                         <div class="frontDoor" onclick="toggleComponent(event, 'frontDoor.JPG')"></div>

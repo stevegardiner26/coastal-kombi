@@ -493,8 +493,11 @@ footer {
     -moz-border-radius: 2px;
     border-radius: 2px;
     box-shadow: 2px 2px 5px rgba(0,0,0,.2);
-    position: relative;
-    background: url('/img/virtual/allshut.JPG') center center no-repeat;
+    position: absolute;
+    /*background: url('/img/virtual/allshut.JPG') center center no-repeat; */
+    background-position: center center;
+    background-repeat: no-repeat;
+
     -webkit-background-size: 100%;
     background-size: 100%;
     width: 1200px;
@@ -552,6 +555,26 @@ footer {
     left: 112px;
 }
 
+.backDoor_contain {
+    background-position: 1px -97.5px;
+}
+
+.middleDoor_contain {
+    background-position: -7px -101px;
+}
+
+.frontDoor_contain {
+    background-position: 5px -98.5px;
+}
+
+.trunkTop_contain {
+    background-position: center -106px;
+}
+
+.trunkBottom_contain {
+    background-position: center -100px;
+}
+
 /* Fact Overlays */
 
 .factoverlay {
@@ -591,3 +614,4 @@ footer {
     transform: translateX(300px);
     opacity: 0;
 }
+
