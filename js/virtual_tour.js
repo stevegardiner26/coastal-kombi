@@ -41,49 +41,55 @@ function toggleComponent(e, component) {
         positionImage(component);
         shut = false;
     }
+    var close = component === previousComponent;
     if(e.clientX <= window.innerWidth/2) {
-        expandInfoLeft(component);
+        expandInfoLeft(component, close);
     } else {
-        expandInfoRight(component);
+        expandInfoRight(component, close);
     }
     previousComponent = component;
 }
 
-function expandInfoLeft(id) {
+function expandInfoLeft(id, same) {
     id = id.split('.')[0];
     var stuff = info[id];
     var element = document.getElementsByClassName('expandLeft')[0];
-    var opposite = document.getElementsByClassName('expandRight')[0];
-    /*if(element.style.display == 'none') {
-        element.style.transform = 'translateX(400px)';
-        setTimeout(function () {
-            element.style.display = 'block';
-        },1000);
+    if (same) {
+        hideLeft();
     } else {
+        element.childNodes[1].innerHTML = stuff.title;
+        element.childNodes[5].innerHTML = stuff.desc;
+        element.style.opacity = '1';
         element.style.transform = 'translateX(0px)';
-        setTimeout(function () {
-            element.style.display = 'none';
-        },1000);
-    }*/
-    element.childNodes[1].innerHTML = stuff.title;
-    element.childNodes[5].innerHTML = stuff.desc;
+        hideRight();
+    }
 }
 
-function expandInfoRight(id) {
+function expandInfoRight(id, same) {
     id = id.split('.')[0];
     var stuff = info[id];
     var element = document.getElementsByClassName('expandRight')[0];
-    var opposite = document.getElementsByClassName('expandLeft')[0];
-    element.childNodes[1].innerHTML = stuff.title;
-    element.childNodes[5].innerHTML = stuff.desc;
+    if(same) {
+        hideRight();
+    } else {
+        element.childNodes[1].innerHTML = stuff.title;
+        element.childNodes[5].innerHTML = stuff.desc;
+        element.style.opacity = '1';
+        element.style.transform = 'translateX(0px)';
+        hideLeft();
+    }
 }
 
 function hideLeft() {
-
+    var element = document.getElementsByClassName('expandLeft')[0];
+    element.style.transform = 'translateX(-300px)';
+    element.style.opacity = '0';
 }
 
 function hideRight() {
-
+    var element = document.getElementsByClassName('expandRight')[0];
+    element.style.transform = 'translateX(300px)';
+    element.style.opacity = '0';
 }
 
 function positionImage(component) {

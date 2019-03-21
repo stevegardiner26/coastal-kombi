@@ -563,6 +563,7 @@ footer {
     background: rgba(255,255,255,.8);
     border-radius: 3px;
     box-shadow: 2px 2px 5px rgba(0,0,0,.3);
+    transition: transform 1s, opacity 1s;
 }
 
 .factoverlay h4 {
@@ -581,8 +582,12 @@ footer {
 
 .expandLeft {
     left: 20px;
+    transform: translateX(-300px);
+    opacity: 0;
 }
 
 .expandRight {
     right: 20px;
+    transform: translateX(300px);
+    opacity: 0;
 }
