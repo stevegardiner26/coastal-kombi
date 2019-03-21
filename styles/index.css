@@ -581,13 +581,13 @@ footer {
 }
 
 .expandLeft {
-    left: 20px;
+    left: 50px;
     transform: translateX(-300px);
     opacity: 0;
 }
 
 .expandRight {
-    right: 20px;
+    right: 50px;
     transform: translateX(300px);
     opacity: 0;
 }

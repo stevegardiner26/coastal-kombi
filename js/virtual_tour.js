@@ -43,19 +43,24 @@ function toggleComponent(e, component) {
     }
     var close = component === previousComponent;
     if(e.clientX <= window.innerWidth/2) {
-        expandInfoLeft(component, close);
+        expandInfoLeft(component, close, shut);
     } else {
-        expandInfoRight(component, close);
+        expandInfoRight(component, close, shut);
     }
     previousComponent = component;
 }
 
-function expandInfoLeft(id, same) {
+function expandInfoLeft(id, same, isShut) {
     id = id.split('.')[0];
     var stuff = info[id];
     var element = document.getElementsByClassName('expandLeft')[0];
     if (same) {
-        hideLeft();
+        if (isShut) {
+            hideLeft();
+        } else {
+            element.style.opacity = '1';
+            element.style.transform = 'translateX(0px)';
+        }
     } else {
         element.childNodes[1].innerHTML = stuff.title;
         element.childNodes[5].innerHTML = stuff.desc;
@@ -65,12 +70,17 @@ function expandInfoLeft(id, same) {
     }
 }
 
-function expandInfoRight(id, same) {
+function expandInfoRight(id, same, isShut) {
     id = id.split('.')[0];
     var stuff = info[id];
     var element = document.getElementsByClassName('expandRight')[0];
     if(same) {
-        hideRight();
+        if (isShut) {
+            hideRight();
+        } else {
+            element.style.opacity = '1';
+            element.style.transform = 'translateX(0px)';
+        }
     } else {
         element.childNodes[1].innerHTML = stuff.title;
         element.childNodes[5].innerHTML = stuff.desc;
