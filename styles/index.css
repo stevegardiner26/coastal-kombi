@@ -580,6 +580,7 @@ footer {
 .factoverlay {
     position: absolute;
     padding: 10px;
+    z-index: 2;
     top: 25%;
     width: 300px;
     height: auto;
