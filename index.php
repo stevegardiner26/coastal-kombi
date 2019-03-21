@@ -66,7 +66,7 @@
                 <p class="titleB">VolksWagen Bus Rental</p>
                 <div class="row titleB">
                     <div class="col-md-6">
-                        <button class="btn btn1" style="background: #00CAF0; color: white;" onclick="scrollo('virtual')">Virtual Tour</button>
+                        <button class="btn btn1" style="background: #00CAF0; color: white;" onclick="scrollo('virtualSlide')">Virtual Tour</button>
                     </div>
                     <div class="col-md-6">
                         <button class="btn btn2" onclick="scrollo('contact')">Contact</button>
@@ -81,7 +81,6 @@
                     <h5 class="text-center">Explore the Van by Clicking Around!</h5>
                 </div>
                 <div class="row">
-
                     <div class="showcase" style="position: relative;">
                         <div class="backDoor_contain showcase" style="background-image: url('/img/virtual/backDoor.JPG'); display: none;"></div>
                         <div class="middleDoor_contain showcase" style="background-image: url('/img/virtual/middleDoor.JPG'); display: none;"></div>
@@ -184,7 +183,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <form class="form" method="POST" action="thank_you.php">
+                            <form class="form" method="POST" action="contact.php">
                                 <input name="name" id="name" type="text" class="form-control" placeholder="Name" required>
                                 <input name="email" id="email" type="email" class="form-control" placeholder="Email" required>
                                 <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Message" required></textarea>
