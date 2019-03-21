@@ -92,6 +92,16 @@
                         <p>The Virtual Tour is Currently Not Available on your Device.</p>
                     </div>
                 </div>
+                <div class="factoverlay expandLeft container">
+                    <h4>The is the fact title</h4>
+                    <hr>
+                    <p>Here is the fact desceription</p>
+                </div>
+                <div class="factoverlay expandRight container">
+                    <h4>The is the fact title</h4>
+                    <hr>
+                    <p>Here is the fact desceription</p>
+                </div>
             </div>
         </section>
         <section class="jerseyShore row no-gutters">

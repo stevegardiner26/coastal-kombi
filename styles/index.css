@@ -551,3 +551,38 @@ footer {
     top: 306px;
     left: 112px;
 }
+
+/* Fact Overlays */
+
+.factoverlay {
+    position: absolute;
+    padding: 10px;
+    top: 25%;
+    width: 300px;
+    height: auto;
+    background: rgba(255,255,255,.8);
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.3);
+}
+
+.factoverlay h4 {
+    margin: 0;
+}
+
+.factoverlay hr {
+    margin-top: -5px;
+    margin-bottom: 5px;
+    background: #00CAF0;
+}
+
+.factoverlay p {
+    margin-bottom: 0;
+}
+
+.expandLeft {
+    left: 20px;
+}
+
+.expandRight {
+    right: 20px;
+}

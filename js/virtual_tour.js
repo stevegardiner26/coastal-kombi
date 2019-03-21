@@ -52,8 +52,9 @@ function toggleComponent(e, component) {
 function expandInfoLeft(id) {
     id = id.split('.')[0];
     var stuff = info[id];
-    var element = document.getElementsByClassName('expandRight')[0];
-    if(element.style.display == 'none') {
+    var element = document.getElementsByClassName('expandLeft')[0];
+    var opposite = document.getElementsByClassName('expandRight')[0];
+    /*if(element.style.display == 'none') {
         element.style.transform = 'translateX(400px)';
         setTimeout(function () {
             element.style.display = 'block';
@@ -63,12 +64,26 @@ function expandInfoLeft(id) {
         setTimeout(function () {
             element.style.display = 'none';
         },1000);
-    }
+    }*/
+    element.childNodes[1].innerHTML = stuff.title;
+    element.childNodes[5].innerHTML = stuff.desc;
 }
 
 function expandInfoRight(id) {
     id = id.split('.')[0];
-    var element = info[id];
+    var stuff = info[id];
+    var element = document.getElementsByClassName('expandRight')[0];
+    var opposite = document.getElementsByClassName('expandLeft')[0];
+    element.childNodes[1].innerHTML = stuff.title;
+    element.childNodes[5].innerHTML = stuff.desc;
+}
+
+function hideLeft() {
+
+}
+
+function hideRight() {
+
 }
 
 function positionImage(component) {
