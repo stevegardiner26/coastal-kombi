@@ -16,6 +16,10 @@ nav {
     z-index: 60;
 }
 
+.navdesktop {
+    padding: 0;
+}
+
 .navdesktop ul {
     flex-direction: row;
     width: 100%;
